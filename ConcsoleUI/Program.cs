@@ -1,4 +1,6 @@
 ﻿using Business.Concrete;
+using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 
 namespace ConcsoleUI
@@ -8,7 +10,9 @@ namespace ConcsoleUI
 
     static void Main(string[] args)
     {
-            ProductManager productManager = new ProductManager(new InMemoryProductDal());
+            IProductDal productDal= new EntityFrameworkProductDal();
+
+            ProductManager productManager = new ProductManager(productDal);
 
             foreach(var product in productManager.GetAll())
             {

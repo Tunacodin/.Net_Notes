@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -87,6 +88,16 @@ namespace DataAccess.Concrete.InMemory
             return _products.Where(p => p.CategoryId == categoryId).ToList(); // _products listesinde kategori id si istenilen id ye eşit olan ürünleri bul ve bunları bir listeye çevir
 
 
+        }
+
+        public Product Get(Expression<Func<Product, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Product> GetAll(Expression<Func<Product, bool>> filter = null)
+        {
+            throw new NotImplementedException();
         }
     }
 }

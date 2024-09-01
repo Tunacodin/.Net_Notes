@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Abstract;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,14 @@ using System.Threading.Tasks;
 
 namespace Entities.Concrete
 {
-    internal class Customer
+    public class Customer:IEntity
     {
+        public string CustomerName { get; set; }
+
+        public string CustomerId { get; set; }
+
+        public string CompanyName { get; set; }
+
+        public string City { get; set; }
     }
 }

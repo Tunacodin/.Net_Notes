@@ -15,16 +15,10 @@ namespace DataAccess.Abstract
 
     // Product tablosunu(class) implemente eden veri erişim katmanıdır
     // Inteface içerisindeki metotların başına public yazılmaz
-    public interface IProductDal
+    public interface IProductDal : IEntityRepository<Product>
+
     {
-             List<Product> GetAll();
-
-           List<Product> GetAllById(int categoryId);
-            void Add(Product product);
-
-            void Delete(Product product);
-
-            void Update (Product product);
+            
 
        
     }
