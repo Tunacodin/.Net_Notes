@@ -19,7 +19,7 @@ namespace DataAccess.Abstract
     {
              List<Product> GetAll();
 
-           
+           List<Product> GetAllById(int categoryId);
             void Add(Product product);
 
             void Delete(Product product);

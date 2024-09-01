@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConcsoleUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d3610ef9218028cffb3ea6ca6659ab1d631e361")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a97b0699b35eb6830997e1eaab35510d0927dc9d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConcsoleUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConcsoleUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
