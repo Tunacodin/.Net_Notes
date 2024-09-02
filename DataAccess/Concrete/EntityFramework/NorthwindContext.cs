@@ -14,7 +14,7 @@ namespace DataAccess.Concrete.EntityFramework
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"(localdb)\MSSQLLocalDB, Database=Northwind,Trusted_Connection=true,TrustServerCertificate=True"); // localdb yerine IP adresi gelir
+           optionsBuilder.UseSqlServer( @"Server=LAPTOP-0I24A1AJ\SQLEXPRESS;Database=Northwind;Trusted_Connection=true;TrustServerCertificate=True;"); // localdb yerine IP adresi gelir
 
         }
 
@@ -23,6 +23,6 @@ namespace DataAccess.Concrete.EntityFramework
 
         public DbSet<Customer> Customers { get; set; } 
 
-
+        
     }
 }

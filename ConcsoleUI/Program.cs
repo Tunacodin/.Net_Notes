@@ -14,10 +14,13 @@ namespace ConcsoleUI
 
             ProductManager productManager = new ProductManager(productDal);
 
-            foreach(var product in productManager.GetAll())
-            {
-                Console.WriteLine("Product Name : " + product.ProductName);
-            }
+            //foreach(var product in productManager.GetAll())
+            //{
+            //    Console.WriteLine("Product Name : " + product.ProductName+ "\n \n" + " Product Fiyatı: " + product.UnitPrice);
+            //}
+
+          
+
+        }
     }
-}
 }

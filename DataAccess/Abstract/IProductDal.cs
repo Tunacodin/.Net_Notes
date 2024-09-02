@@ -1,4 +1,4 @@
-﻿
+﻿using Core.DataAccess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,11 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-using Entities.Concrete; // DataAccess Entities katmanını çağırır
+using Entities.Concrete; // DataAccess Entities katmanını çağırır (Artık Core katmanından çağırıyor)
+                         //Code refactoring yapıldı
 
 
-
-namespace DataAccess.Abstract
+namespace Core.DataAccess
 {
 
     // Product tablosunu(class) implemente eden veri erişim katmanıdır
